@@ -1,0 +1,150 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid102\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww29200\viewh18460\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 \ul \ulc0 \
+\
+Decision Tree:
+\f1\b0 \ulnone \
+\
+A decision tree is a supervised learning algorithm used for both classification and regression tasks. It has a hierarchical tree structure which consists \
+of a root node, branches, internal nodes and leaf nodes. It works like a flowchart that helps in making step-by-step decisions, \
+\
+where:\
+Root node is starting node\
+Internal nodes represent attribute tests\
+Branches represent attribute values\
+Leaf nodes represent final decisions or predictions.\
+\
+
+\f0\b \ul Pruning Techniques:
+\f1\b0 \ulnone \
+\
+
+\f0\b \ul 1. Post Pruning :
+\f1\b0 \ulnone  Post-pruning is a pruning strategy in which the decision tree is allowed to grow to its full depth first, after which unnecessary or weak \
+branches are removed. Unlike pre-pruning, this approach does not restrict the tree during training. Instead, it analyzes the fully grown tree and \
+evaluates whether certain subtrees contribute meaningfully to predictive performance.\
+\
+
+\f0\b \ul 2. Pre Pruning:
+\f1\b0 \ulnone  Pre-pruning is also known as early stopping, is a pruning strategy in which the growth of the decision tree is restricted during the training phase itself. \
+Instead of allowing the tree to grow fully and then trimming it later, pre-pruning prevents certain splits from being created if they do not satisfy \
+predefined constraints.\
+\
+\
+
+\f0\b \ul Entropy
+\f1\b0 \ulnone : It is the measure of uncertainty of a random variable, it characterizes the impurity of collection of examples. The higher the entropy more the \
+information content.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 Example: if a dataset has an equal number of "Yes" and "No" outcomes (like 3 people who bought a product and 3 who didn\'92t), the entropy is high because it\'92s uncertain \
+which outcome to predict. But if all the outcomes are the same (all "Yes" or all "No") the entropy is 0 meaning there is no uncertainty left in predicting the outcome\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+
+\f0\b \ul Information Gain: 
+\f1\b0 \ulnone  Information Gain tells us how useful a feature is for splitting data into groups. It measures how much the uncertainty/entropy/randomness decreases \
+after the split. A good feature/variable will create clearer groups and the feature with the highest Information Gain is chosen to make the decision.\
+\
+
+\f0\b \ul Gini Index/Impurity:\
+
+\f1\b0 \ulnone \
+It is calculated by summing the squared probabilities of each outcome in a distribution and subtracting the result from 1.\
+A lower Gini Index indicates a more homogeneous or pure distribution while a higher Gini Index indicates a more heterogeneous or impure distribution.\
+\
+\
+
+\f0\b \ul Algorithms:
+\f1\b0 \ulnone \
+\
+
+\f0\b \ul 1. ID3:
+\f1\b0 \ulnone \
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8226 	}ID3 is a decision tree learning algorithm used for solving classification problems. It builds the tree using a top-down, greedy approach by selecting the attribute that \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}          provides the highest Information Gain which is calculated using entropy.\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8226 	}ID3 mainly works with categorical attributes and recursively splits the data until the nodes become pure or no attributes remain.\
+\ls1\ilvl0{\listtext	\uc0\u8226 	}It is simple and easy to interpret but can overfit the training data and does not handle continuous features directly.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\f0\b \ul 2. C4.5:
+\f1\b0 \ulnone \
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8226 	}C4.5 is an improved extension of the ID3 algorithm. It is designed to overcome several limitations of ID3, such as handling continuous attributes, managing missing values \
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls2\ilvl1\cf0 	and reducing bias toward attributes with many values by using Gain Ratio instead of Information Gain.\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8226 	}Uses Gain Ratio as the splitting criterion to reduce bias toward attributes with many distinct values.\
+\ls2\ilvl0{\listtext	\uc0\u8226 	}Can handle both categorical and continuous attributes, making it more flexible than ID3.\
+\ls2\ilvl0{\listtext	\uc0\u8226 	}Applies post-pruning techniques to simplify the tree and reduce overfitting.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\f0\b \ul 3. CART (Classification and Regression Trees):
+\f1\b0 \ulnone \
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 {\listtext	\uc0\u8226 	}CART is a widely used decision tree algorithm that can handle both classification and regression problems. CART builds binary decision trees by repeatedly splitting the \
+\ls3\ilvl0	       dataset into two subsets based on the most informative feature.\
+\ls3\ilvl0{\listtext	\uc0\u8226 	}Works for both classification and regression tasks.\
+\ls3\ilvl0{\listtext	\uc0\u8226 	}Uses Gini Impurity for classification and variance reduction for regression.\
+\ls3\ilvl0{\listtext	\uc0\u8226 	}Always produces binary trees, meaning each internal node splits into exactly two child nodes.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+
+\f0\b \ul Advantages:
+\f1\b0 \ulnone \
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf0 {\listtext	\uc0\u8226 	}Can do both classification and Regression\
+{\listtext	\uc0\u8226 	}Easy to grasp\
+{\listtext	\uc0\u8226 	}Simple when Visualized\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+
+\f0\b \ul Disadvantages:\
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls5\ilvl0
+\f1\b0 \cf0 \ulnone {\listtext	\uc0\u8226 	}Overfitting is a drawback of decision trees is their tendency to overfit the training data. When a tree becomes too complex\'97attempting to account for every minor detail, \
+	       including random noise\'97it may perform poorly on unseen data.\
+{\listtext	\uc0\u8226 	}Decision trees exhibit high variance, meaning their structure and predictions can change significantly with slight variations in the training data.\
+{\listtext	\uc0\u8226 	}Decision trees may favor dominant classes or features with many unique values, introducing biases.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

@@ -1,0 +1,80 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww29000\viewh17740\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 Linear Regression :\
+\
+* Used to predict the continuous variable using the bestfit line\
+* it assumes there is a linear relationship between the input and output variables\
+\
+\
+Best Fit Line in Linear Regression\
+In linear regression, the best-fit line is the straight line that most accurately represents the relationship between \
+the independent variable (input) and the dependent variable (output). It is the line that minimizes the difference between \
+the actual data points and the predicted values from the model.\
+\
+Equation of best fit line :\
+\
+y = mx + c\
+\
+Where:\
+\
+y is the predicted value (dependent variable)\
+x is the input (independent variable)\
+m is the slope of the line (how much y changes when x changes)\
+b is the intercept (the value of y when x = 0)\
+\
+Gradient Descent:\
+\
+Gradient descent is an optimization technique used to train a linear regression model by minimizing the prediction error. It works by \
+starting with random model parameters (m&c) and repeatedly adjusting them to reduce the difference between predicted and actual values.\
+\
+How it works:\
+\
+Start with random values for slope and intercept.\
+Calculate the error between predicted and actual values.\
+Find how much each parameter contributes to the error (gradient).\
+Update the parameters in the direction that reduces the error.\
+Repeat until the error is as small as possible.\
+\
+\
+R Square(Coefficient of determination): says how much variation model can explain, it is in a range of 0-1, greater the R square better the model is\
+\
+R^2 = 1 - SSE/SST\
+\
+SSE - Sum of squared errors\
+SST - Total sum of squares \
+\
+Drawback: R square increases when new input variable is added to the model even if it doesn't improve the model\
+\
+Adjusted R Square: It considers only those input variables that really affect the value of a output variable.\
+\
+\
+Bias: \
+\
+Bias is the error that occurs when a model is too simple to capture the true patterns in the data.\
+\
+High bias: The model oversimplifies, misses patterns and underfits the data.\
+Low bias: The model captures patterns well and is closer to the true values.\
+\
+\
+Variance\
+Variance arises when a model becomes too sensitive to training data and it captures noises in data too. It fails to give prediction on unseen new data.\
+\
+High variance: The model is too sensitive to small changes and may overfit.\
+Low variance: The model is more stable but might miss some patterns.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

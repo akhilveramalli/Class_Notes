@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
+from pandas.plotting import scatter_matrix
 
 
 st.set_page_config(
@@ -125,3 +126,27 @@ with col4:
     fig.update_layout(xaxis_title="Readmission", yaxis_title="Count")
     st.plotly_chart(fig)
 
+
+import streamlit as st
+import matplotlib.pyplot as plt
+from pandas.plotting import scatter_matrix
+
+features = [
+    'time_in_hospital',
+    'num_lab_procedures',
+    'num_procedures',
+    'num_medications',
+    'number_outpatient',
+    'number_emergency',
+    'number_inpatient',
+    'number_diagnoses'
+]
+
+# Create scatter matrix
+scatter_matrix(df[features], figsize=(6,6), diagonal='hist')
+
+# Get current figure
+fig = plt.gcf()
+
+# Show in Streamlit
+st.pyplot(fig)
